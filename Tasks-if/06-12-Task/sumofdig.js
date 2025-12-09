@@ -6,4 +6,4 @@ while(n>0)
     sum=sum+dig;
     n=Math.floor(n/10);
 }
-console.log(sum);
+console.log("sum of digits:",sum);
