@@ -8,7 +8,7 @@ for(let ch of str)
         vcount++;
         
     }
-    else
+    else if(ch!=" ")
     {
         ccount++;
         
