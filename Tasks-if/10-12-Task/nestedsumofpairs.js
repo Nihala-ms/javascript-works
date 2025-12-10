@@ -5,13 +5,7 @@ for (var r = 1; r <= 3; r++)
 {
 
         pattern=pattern+`${c}+${r}=${r + c} `;
-        
-
 
 }
-
 console.log(pattern);
-
-
-
 }
