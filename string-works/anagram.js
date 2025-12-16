@@ -23,4 +23,3 @@ else
 }
 
 console.log(anagram("listen","silent"));
-
