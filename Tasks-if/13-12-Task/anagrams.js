@@ -18,7 +18,7 @@ function anagram(word1,word2)
 }
 else
 {
-    return isangram =false;
+    return isangram=false;
 }
 }
 

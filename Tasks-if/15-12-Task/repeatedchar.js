@@ -4,7 +4,7 @@ function firstRepeatedChar(str) {
         if (res.includes(ch)) {
             return ch;
         }
-        seen += ch;
+        res += ch;
     }
     return "No repeated character";
 }
