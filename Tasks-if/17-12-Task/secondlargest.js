@@ -1,21 +1,5 @@
 var arr=[34,2,43,65,76,70];
-var max=0;
-var seclargest=0;
-for(let a of arr){
-    if(a>max)
-    {
-        max=a;
-    }
-    arr.pop(max);
-    if(let ar of arr){
-        if(ar>seclargest)
-        {
-            seclargest=a;
-        }
-
-    }
+arr.sort((w1,w2)=>w1-w2);
+console.log(arr[arr.length-2]);
 
 
-}
-
-console.log(seclargest);
