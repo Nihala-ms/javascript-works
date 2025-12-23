@@ -37,6 +37,22 @@ var num=numbers.sort((n1,n2)=>n2-n1);
 console.log(num);
 console.log(num[0]);
 //12.array by converting each number to string
+var string=numbers.map(n=>n.toString());
+console.log(string);
+//13.difference b/w max and min
+var min=numbers.reduce((n1,n2)=>n1<n2?n1:n2);
+var max=numbers.reduce((n1,n2)=>n1>n2?n1:n2);
+var arr=max-min;
+console.log(arr);
+//14.Create a new array by multiplying each number by its index value.
+var arr1=numbers.map((n,index)=>n*index);
+console.log(arr1);
+//15.Check whether all numbers are greater than 5.
+var arr2=numbers.every(n=>n>5);
+console.log(arr2);
+
+
+
 
 
 

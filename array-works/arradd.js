@@ -18,6 +18,7 @@ console.log("even numbers in arr:",even);
 //odd
 var odd=numbers.filter(num=>num%2!=0);
 console.log("odd numbers in arr:",odd);
+//
 
 
 
