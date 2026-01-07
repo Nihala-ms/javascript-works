@@ -8,9 +8,6 @@ number--;
 
 console.log("the number is decremented by 1:",number);
 
-
-
-
 number+=5;
 
 console.log("number is incremented by 5",number);

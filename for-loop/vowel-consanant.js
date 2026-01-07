@@ -1,14 +1,15 @@
 var str="javascript";
 var vcount=0;
 var ccount=0;
+var vowels=["a","e","i","o","u"];
 for(let ch of str)
 {
-    if(ch=="a" || ch=="e" || ch=="i" || ch=="o" || ch=="u")
+    if(vowels.includes(ch))
     {
         vcount++;
         
     }
-    else if(ch!=" ")
+    else
     {
         ccount++;
         

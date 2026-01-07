@@ -80,7 +80,41 @@ var books = [
     language: "Malayalam"
   }
 ];
+//sorting alphabetic order
 
 books.sort((b1,b2)=>b1.title.localeCompare(b2.title));
 console.log(books);
+
+//language summary
+var languageCount={};
+
+for(let b of books)
+{
+    let lang=b.language;
+    if(lang in languageCount)
+    {
+        languageCount[lang]+=1;
+    }
+    else
+    {
+        languageCount[lang]=1;
+    }
+    
+    
+}
+console.log("language count of books:",languageCount);
+
+
+
+//language with most number of books
+
+var mostnumber=Object.entries(languageCount).reduce((l1,l2)=>l1[1]>l2[1]?l1:l2);
+console.log(`most count language:${mostnumber}`);
+
+//language with minimum number of books
+
+var minnumber=Object.entries(languageCount).reduce((l1,l2)=>l1[1]<l2[1]?l1:l2);
+console.log(`minmum count language:${minnumber}`);
+
+
 

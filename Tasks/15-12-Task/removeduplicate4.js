@@ -1,6 +1,5 @@
 function duplicate(str)
 {
-
 var res="";
 for(let i=0;i<str.length;i++)
 {

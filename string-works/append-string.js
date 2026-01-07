@@ -2,7 +2,6 @@ function appendWord(string1,string2)
 {
      var append=string1.concat(string2);
      return append;
-
 }
 
 function replacex(append){
