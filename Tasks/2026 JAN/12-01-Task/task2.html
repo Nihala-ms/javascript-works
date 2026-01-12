@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head">Header</h1>
+    <p>Click the button below to change the background color.</p>
+    <p>Click the button below to change the background color.</p>
+    <p>Click the button below to change the background color.</p>
+    <button onclick="btnclick()">Use Tag</button>
+    <script>
+        const heading=document.getElementsByClassName("head");
+        console.log([...heading].map(item=>item.style.color="green"));
+
+        function btnclick(){
+            const para=document.getElementsByTagName("p");
+            console.log([...para].map(item=>item.style.backgroundColor="pink"));
+            
+        }
+        
+    </script>
+</body>
+</html>

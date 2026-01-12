@@ -297,52 +297,64 @@ const foods = [
 
 // 1. Create an array of all food names.
 var foodName=foods.map(m=>m.name);
+console.log("1. Create an array of all food names.");
 console.log(foodName);
 
 // 2. Create an array of food names with price in the format:  "Masala Dosa - ₹80".
 var foodNPrice=foods.map(f=>`${f.name}-${f.price}`);
+console.log("2. Create an array of food names with price in the format:  Masala Dosa - ₹80.");
 console.log(foodNPrice);
 
 // 3. Create an array of all cuisines in uppercase.
 var cuisinesUpper=foods.map(f=>f.cuisine.toUpperCase());
+console.log("3. Create an array of all cuisines in uppercase.");
 console.log(cuisinesUpper);
 
 // 4. Create an array of objects containing id and name only.
 var idandName=foods.map(f=>({id:f.id,Name:f.name}));
+console.log("4. Create an array of objects containing id and name only.");
 console.log(idandName);
 
 // 5. Create an array that shows only the prices of all foods.
 var prices=foods.map(f=>f.price);
+console.log("5. Create an array that shows only the prices of all foods.");
 console.log(prices);
 
 // 6. List all vegetarian foods.
 var veg=foods.filter(f=>f.isVeg==true);
+console.log("6. List all vegetarian foods.");
 console.log(veg);
 
 
 // 7. List all foods that belong to the "Main Course" category.
 var maincourseFood=foods.filter(f=>f.category=="Main Course");
+console.log("7. List all foods that belong to the Main Course category.");
 console.log(maincourseFood);
 
 // 8. Find all foods with price less than 100.
 var foodls=foods.filter(f=>f.price<100);
+console.log("8. Find all foods with price less than 100.");
 console.log(foodls);
 
 // 9. List all foods whose cuisine is "Indian".
 var cuisineIndia=foods.filter(f=>f.cuisine=="Indian");
+console.log("9. List all foods whose cuisine is Indian.");
 console.log(cuisineIndia);
 
 // 10. Find all foods that contain "Chicken" as an ingredient.
 var chickenIn=foods.filter(f=>f.ingredients.item=="Chicken");
+console.log("10. Find all foods that contain Chicken as an ingredient.");
 console.log(chickenIn);
 
 // 11. Find the total price of all food items.
 var total=foods.reduce((s,f)=>s+f.price,0);
+console.log("11. Find the total price of all food items.");
 console.log(total);
 
 // 12. Find the average price of vegetarian foods.
 var sum=foods.reduce((s,f)=>s+f.price,0);
 var avg=sum/foods.length;
+console.log("12. Find the average price of vegetarian foods.");
 console.log(avg);
 
 // 13. Create an object that shows total number of foods by category. Example: { Breakfast: 4, Snack: 6 }
@@ -358,6 +370,7 @@ for(let f of foods)
         totalCount[category]=1;
     }
 }
+console.log("13. Create an object that shows total number of foods by category. Example: { Breakfast: 4, Snack: 6 }");
 console.log(totalCount);
 
 // 14. Create an object that shows total price by cuisine.
@@ -374,27 +387,35 @@ for(let f of foods)
         cuisinePrice[cuisine]=[price];
     }
 }
+console.log("14. Create an object that shows total price by cuisine.");
 console.log(cuisinePrice);
 
 // 15. Find the most expensive food item.
 var expensivefood=foods.reduce((f1,f2)=>f1.price>f2.price?f1:f2);
+console.log("15. Find the most expensive food item.");
 console.log(expensivefood);
 
 // 16. Sort all foods by price (ascending order).
 var ascsort=foods.sort((f1,f2)=>f1.price-f2.price);
+console.log("16. Sort all foods by price (ascending order).");
 console.log(ascsort);
 
 // 17. Sort all foods by price (descending order).
 var dscsort=foods.sort((f1,f2)=>f2.price-f1.price);
+console.log("17. Sort all foods by price (descending order).");
 console.log(dscsort);
+
 // 18. Sort foods by name alphabetically (A–Z).
 var alpha=foods.sort((f1,f2)=>f1.name.localeCompare(f2.name));
+console.log("18. Sort foods by name alphabetically (A–Z).");
 console.log(alpha);
 
 // 19. Sort foods by category alphabetically.
 var categorySort=foods.sort((f1,f2)=>f1.category.localeCompare(f2.category));
+console.log("19. Sort foods by category alphabetically.");
 console.log(categorySort);
 
 // 20. Sort foods by cuisine in reverse alphabetical order.
 var cuisineSort=foods.sort((f1,f2)=>f2.cuisine.localeCompare(f1.cuisine));
+console.log("20. Sort foods by cuisine in reverse alphabetical order.");
 console.log(cuisineSort);

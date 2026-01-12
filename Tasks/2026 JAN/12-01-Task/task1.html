@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Header</h1>
+    <div>
+        <p class="para">Click the button below to change my color.</p>
+        <p>This is a static paragraph.</p>
+        <p>This is a static paragraph.</p>
+    </div>
+    <div>
+        <button class="btn" type="button" onclick="btngreen()">Green</button>
+        <button class="btn" type="button" onclick="btnblue()">Blue</button>
+        <button class="btn" type="button" onclick="btnred()">Red</button>
+    </div>
+    <script>
+        function btngreen(){
+            const green=document.getElementsByClassName("para");
+            console.log([...green].map(item=>item.style.color="green"));  
+        }
+        function btnblue(){
+            const blue=document.getElementsByClassName("para");
+            console.log([...blue].map(item=>item.style.color="blue"));  
+        }
+        function btnred(){
+            const red=document.getElementsByClassName("para");
+            console.log([...red].map(item=>item.style.color="red"));  
+        }
+
+    </script>
+</body>
+</html>

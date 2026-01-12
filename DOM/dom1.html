@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="head">DOM MANIPULATION</h1>
+    <ul>
+        <li class="class">document.getElementById()</li>
+        <li>document.getElementsByClassName()</li>
+        <li>document.getElementsByTagName()</li>
+        <li class="class">document.querySelector()</li>
+        <li>document.querySelectorAll()</li>
+    </ul>
+    
+<button class="btn" onclick="btnclick()">Submit</button>
+<script>
+    //document.getElementById()
+    const documentId=document.getElementById("head");
+    console.log(documentId);
+    documentId.style.color="red";
+
+    //document.getElementsByClassName()
+    const documentClass=document.getElementsByClassName("class");
+    console.log(documentClass);
+    
+//converting html collection into a array
+console.log(Array.from(documentClass));
+console.log(Array.from(documentClass).map(item=>item.style.color="green"));
+
+//document.getElementsByTagName()
+var documentTag=document.getElementsByTagName("li");
+console.log(documentTag);
+
+//covert html collection into array
+console.log([...documentTag]);
+console.log([...documentTag].map(item=>item.style.color="blue"));
+
+//document.querySelector()
+const query=document.querySelector("li");
+console.log(query);
+
+//document.querySelectorAll()
+const queryAll=document.querySelectorAll("li");
+console.log(queryAll);
+
+const header=document.querySelector("#head");
+console.log(header);
+
+//document.btn
+const querybtn=document.querySelector(".btn");
+console.log(querybtn);
+
+
+//button
+function btnclick(){
+    alert("button clicked")
+}
+    
+
+  
+</script>
+</body>
+</html>
